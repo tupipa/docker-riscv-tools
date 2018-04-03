@@ -24,9 +24,9 @@ RUN apt-get install -y \
 	cd /root/riscv/rocket-chip/riscv-tools && \
 	git submodule update --init --recursive
 
-#RUN    	export RISCV=/root/riscv/toolchainbuilt && \
-#	export MAKEFLAGS="MAKEFLAGS -j4" && \
-#	cd /root/riscv/rocket-chip/riscv-tools && ./build.sh
+RUN    	export RISCV=/root/riscv/toolchainbuilt && \
+	export MAKEFLAGS="MAKEFLAGS -j4" && \
+	cd /root/riscv/rocket-chip/riscv-tools && ./build.sh
 
 
 
